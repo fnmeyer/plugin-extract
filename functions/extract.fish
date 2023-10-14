@@ -27,6 +27,8 @@ function extract --description "Expand or extract bundled & compressed files"
       end
     case 7z
       7z x $argv[1]
+    case Z
+      uncompress
     case '*'
       echo "unknown extension"
   end
